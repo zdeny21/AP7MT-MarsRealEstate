@@ -29,6 +29,9 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
+        kotlinOptions {
+            jvmTarget = JavaVersion.VERSION_1_8.toString()
+        }
     }
     buildTypes {
         release {
@@ -73,4 +76,6 @@ dependencies {
 
     implementation "com.squareup.moshi:moshi-kotlin:$version_moshi"
     implementation "com.squareup.retrofit2:converter-moshi:$version_retrofit"
+
+    implementation "com.github.bumptech.glide:glide:$version_glide"
 }
